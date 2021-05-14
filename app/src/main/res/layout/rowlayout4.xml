@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txt_title4"
+    android:layout_width="match_parent"
+    android:textColor="@color/white"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="37sp"
+    android:textStyle="bold"
+    android:drawableLeft="@drawable/mov_icon"
+    android:drawablePadding="10dp"
+    android:textSize="20sp"
+    tools:ignore="RtlHardcoded" />

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="30dp"
+    android:background="@drawable/colored"
+    tools:context=".Edit_Movie_Details_Page">
+
+<!--    android:background="#230C33"-->
+
+    <EditText
+        android:id="@+id/edit_text_title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/title_hint_2"
+        android:padding="@dimen/view_padding"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="@dimen/add_edit_textsize"
+        tools:ignore="Autofill,SpUsage,TextFields" />
+
+    <EditText
+        android:id="@+id/edit_text_year2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/year_hint_2"
+        android:padding="@dimen/view_padding"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="@dimen/add_edit_textsize"
+        tools:ignore="Autofill,SpUsage,TextFields"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/view_padding">
+
+        <TextView
+            android:id="@+id/text_fv_status2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="25dp"
+            android:text="@string/favourite_status"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="@dimen/add_edit_textsize"
+            tools:ignore="RtlSymmetry,SpUsage" />
+
+        <RadioGroup
+            android:id="@+id/radio_fv_status2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingEnd="25dp"
+            android:textColor="#fff"
+            tools:ignore="RtlSymmetry">
+
+            <RadioButton
+                android:backgroundTint="#fff"
+                android:id="@+id/yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/yes_status"
+                android:textColor="#fff"
+                android:textSize="@dimen/add_edit_textsize"
+                tools:ignore="SpUsage" />
+
+            <RadioButton
+                android:id="@+id/no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_status"
+                android:textColor="#fff"
+                android:textSize="@dimen/add_edit_textsize"
+                tools:ignore="SpUsage" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/view_padding"
+        tools:ignore="UselessLeaf" />
+
+    <EditText
+        android:id="@+id/edit_text_director2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/director_hint_2"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        tools:ignore="Autofill,TextFields" />
+
+    <EditText
+        android:id="@+id/edit_text_actors2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/actors_actress_hint2"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        tools:ignore="Autofill,TextFields"/>
+
+    <EditText
+        android:id="@+id/edit_text_review_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/review_hint2"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        tools:ignore="Autofill,TextFields"/>
+
+    <TextView
+        android:id="@+id/ratings_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ratings_hint_2"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColorHint="#fff"
+        tools:ignore="Autofill,TextFields"/>
+
+    <RatingBar
+        android:id="@+id/rating_stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:isIndicator="false"
+        android:numStars="10"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:stepSize="1"
+        android:theme="@style/RatingBar"
+        tools:ignore="ObsoleteLayoutParam" />
+    <Button
+        android:textColor="#FFFF"
+        android:backgroundTint="@color/teal_200"
+        android:id="@+id/button_update_edit_details"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:drawableLeft="@drawable/update_icon"
+        android:drawablePadding="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/button_padding"
+        android:text="@string/update_button_text"
+        tools:ignore="RtlHardcoded" />
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colored"
+    tools:context=".Register_movie">
+
+
+    <EditText
+        android:id="@+id/editText_title"
+        android:layout_width="269dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="516dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="@string/title_text"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_register_header"
+        android:layout_width="233dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/custom_textview"
+        android:gravity="center"
+        android:text="@string/register_movie_text2"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/editText_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/ediText_year"
+        android:layout_width="269dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="@string/year_text"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_title" />
+
+    <EditText
+        android:id="@+id/ediText_director"
+        android:layout_width="269dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="@string/director_text"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ediText_year" />
+
+    <EditText
+        android:id="@+id/ediText_cast"
+        android:layout_width="269dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="@string/actors_actresses_text"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ediText_director" />
+
+    <EditText
+        android:id="@+id/ediText_rating"
+        android:layout_width="269dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="@string/rating_text"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ediText_cast" />
+
+    <EditText
+        android:id="@+id/ediText_review"
+        android:layout_width="269dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="@string/review_text"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ediText_rating" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="209dp"
+        android:layout_height="81dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/save_icon"
+        android:drawablePadding="10dp"
+        android:paddingLeft="20dp"
+
+        android:text="@string/save_btn_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ediText_review"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+</androidx.constraintlayout.widget.ConstraintLayout>

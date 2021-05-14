@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".Edit_Movies_List_Activity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        tools:ignore="UselessLeaf" />
+
+    <ListView
+        android:id="@+id/checkable_list5"
+        android:layout_width="600dp"
+        android:textColor="@color/white"
+        android:background="@drawable/colored"
+        android:layout_height="400dp">
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="362dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/custom_textview"
+        android:gravity="center"
+        android:text="@string/search_menu_text"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/searchbar_editText"
+        android:layout_width="337dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/custom_edittext"
+        android:gravity="center"
+        android:hint="@string/search_ediText_hint"
+        android:textColorHint="@color/white"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        tools:ignore="Autofill,TextFields" />
+
+    <Button
+        android:id="@+id/lookup"
+        android:layout_width="wrap_content"
+        android:layout_height="81dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="569dp"
+        android:layout_marginEnd="99dp"
+        android:textStyle="bold|italic"
+        android:layout_marginBottom="29dp"
+        android:drawableLeft="@drawable/search"
+        android:drawablePadding="10dp"
+        android:text="@string/search_btn_text2"
+        tools:ignore="RtlHardcoded" />
+
+
+</RelativeLayout>

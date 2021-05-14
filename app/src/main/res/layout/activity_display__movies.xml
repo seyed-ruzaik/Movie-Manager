@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".Display_Movies">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"/>
+
+    <ListView
+        android:id="@+id/checkable_list"
+        android:layout_width="600dp"
+        android:textColor="@color/white"
+        android:background="@drawable/colored"
+        android:layout_height="400dp">
+    </ListView>
+
+
+    <Button
+        android:id="@+id/addToFavourites_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="92dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="430dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="157dp"
+        android:drawableLeft="@drawable/fv"
+        android:drawablePadding="10dp"
+        android:onClick="addToFavourites"
+        android:paddingLeft="20dp"
+        android:text="@string/add_to_favourites_btn_text2"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="337dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="71dp"
+        android:background="@drawable/custom_textview"
+        android:gravity="center"
+        android:text="@string/display_movies_activity_text"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
